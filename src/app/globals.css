@@ -1,33 +1,450 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(45, 45, 235);
+  }
+
+  .nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+  }
+
+  .logo h2{
+
+    color: white;
+    align-items: center;
+    font-size: 15px;
+  }
+
+
+
+  .nav li a{
+
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+  }
+
+  .h1{
+
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .logo{
+    width: 50px;
+    margin-top: 0 14px;
+    height: 55px;
+    margin-left: 8%;
+  }
+
+  .nav li a:hover{
+  color: aqua;
+  cursor: pointer;
+  }
+
+  .herocontent{
+
+    padding: 30px;
+  }
+
+  .herobtn{
+
+    padding: 30px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .herocontent h1{
+
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 5px;
+
+
+
+  }
+
+  .herocontent h2{
+
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 4px;
+
+  }
+
+  .herocontent h3{
+
+    color: aqua;
+    font-size: 25px;
+    padding: 5px;
+
+    font-weight: bold;
+  }
+
+  .herocontent p{
+
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    padding: 5px;
+
+  }
+
+  .herobtn button{
+
+    color: white;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+
+
+  }
+
+  .herobtn button:hover{
+
+    background-color: red;
+    cursor: pointer;
+  }
+
+  .herobtn p{
+
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+
+  }
+
+  .herobtn span{
+
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .hero{
+
+    background-color: black;
+  }
+
+  .heroimg{
+
+    float: right;
+    margin-left: 8%;
+  }
+
+  .secondhero h2{
+
+    color: blue;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+
+  }
+
+  .secondhero p{
+
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+
+  }
+
+  .secondhero{
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .imagessec{
+
+    display: inline-flex;
+    padding: 15px;
+
+  }
+
+  .img1{
+
+    padding: 5px;
+  }
+
+  .img2{
+
+    padding: 5px;
+  }.img3{
+
+    padding: 5px;
+  }
+
+  .bigpic{
+
+    display: inline-flex;
+    padding: 15px;
+  }
+
+  .img4{
+
+  padding: 5px;
+
+  }
+
+  .img5{
+
+    padding: 5px;
+  }
+
+  .h2 h2{
+
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    color:blue ;
+  }
+
+  .imgsec2{
+
+    padding: 15px;
+    display: inline-flex;
+  }
+
+
+  .img6{
+
+    padding: 5px;
+  }
+
+  .img7{
+
+    padding: 5px;
+  }
+  .img8{
+
+    padding: 5px;
+  }
+
+  .imgsec3{
+
+
+    display: inline-flex;
+    padding: 15px;
+  }
+
+  .img8{
+
+    padding: 5px;
+  }
+
+  .img9{
+
+    padding: 5px;
+  }
+
+  .img10{
+
+    padding: 5px;
+  }
+
+  .img11{
+
+    padding: 5px;
+  }
+
+  .img12{
+
+    padding: 5px;
+  }
+
+  .img13{
+
+    padding: 5px;
+  }
+
+  .img14{
+
+    padding: 5px;
+  }
+
+  .h3{
+
+    color: white;
+    background-color: black;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+
+
+/* Responsive Design: Media Queries */
+
+/* For tablets (landscape mode) - width 768px and up */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .herocontent h1 {
+    font-size: 35px; /* Adjust font size for tablets */
+  }
+
+  .herocontent h2 {
+    font-size: 25px; /* Adjust font size for tablets */
+  }
+
+  .herocontent h3 {
+    font-size: 20px;
+  }
+
+  .herocontent p {
+    font-size: 15px;
+  }
+
+  .herobtn button {
+    width: 130px; /* Adjust button size */
+    font-size: 12px;
+  }
+
+  .secondhero h2 {
+    font-size: 22px;
+  }
+
+  .secondhero p {
+    font-size: 14px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* For mobile devices (portrait mode) - width 480px and below */
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: column; /* Stack logo and nav */
+    padding: 15px;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .nav ul {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap between items */
+  }
+
+  .herocontent {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .herocontent h1 {
+    font-size: 25px; /* Adjust font size for mobile */
+  }
+
+  .herocontent h2 {
+    font-size: 20px;
+  }
+
+  .herocontent h3 {
+    font-size: 18px;
+  }
+
+  .herocontent p {
+    font-size: 14px;
+  }
+
+  .herobtn {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .herobtn button {
+    width: 100%; /* Full width for buttons on mobile */
+    font-size: 12px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .heroimg {
+    float: none;
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+
+  .imagessec,
+  .bigpic,
+  .imgsec2,
+  .imgsec3 {
+    display: block; /* Stack images vertically */
+  }
+
+  .secondhero {
+    padding: 20px;
+  }
+
+  .secondhero h2 {
+    font-size: 20px;
+  }
+
+  .secondhero p {
+    font-size: 13px;
   }
 }
+
+/* For larger screens (desktop, high resolution) - 1200px and up */
+@media only screen and (min-width: 1200px) {
+  .herocontent h1 {
+    font-size: 50px; /* Increase font size for larger screens */
+  }
+
+  .herocontent h2 {
+    font-size: 35px;
+  }
+
+  .herocontent h3 {
+    font-size: 28px;
+  }
+
+  .herobtn button {
+    width: 180px; /* Increase button size */
+    font-size: 16px;
+  }
+
+  .secondhero h2 {
+    font-size: 30px;
+  }
+
+  .secondhero p {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
